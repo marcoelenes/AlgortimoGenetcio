@@ -1,0 +1,18 @@
+version: "3"
+services:
+  app_test:
+    build: .
+    image: agnt
+    environment:
+      - NVIDIA_VISIBLE_DEVICES=all
+    volumes:
+      - ".:/code"
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: 1
+              capabilities: [gpu]
+    command: python Nt.py
+

@@ -1,0 +1,9 @@
+mejor_modelo_rf.pkl
+BDsinaloavalores.xlsb
+BDWeka.csv
+df_filtrado_interpolado.xlsx
+*.csv
+*.xlsb
+*.xlsx
+*.pkl
+BDWeka\BDprediccionTEMP_AGUA0.1
